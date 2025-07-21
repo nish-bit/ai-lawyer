@@ -7,7 +7,12 @@ from dotenv import load_dotenv
 load_dotenv()
 
 #Step1: Setup LLM (Use DeepSeek R1 with Groq)
-llm_model=ChatGroq(model="deepseek-r1-distill-llama-70b")
+#llm_model=ChatGroq(model="deepseek-r1-distill-llama-70b")
+from langchain.embeddings import HuggingFaceEmbeddings
+
+def get_embedding_model():
+    return HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+
 
 #Step2: Retrieve Docs
 
