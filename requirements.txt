@@ -9,4 +9,13 @@ openai
 python-dotenv
 faiss-cpu
 pdfplumber
+streamlit
+langchain
+langchain-community
+langchain-ollama
+pdfplumber
+faiss-cpu
+openai
+python-dotenv
+
 
