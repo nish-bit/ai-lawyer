@@ -7,5 +7,7 @@ pypdf
 pdfplumber
 faiss-cpu
 python-dotenv
+sentence-transformers
+
 
 
