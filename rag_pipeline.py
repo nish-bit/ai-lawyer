@@ -15,7 +15,7 @@ from vectordb import faiss_db  # Ensure this is correctly defined and initialize
 # LLM SETUP (GROQ with DeepSeek)
 # -----------------------------------------------------------------------------
 # You can switch to other Groq-supported models (e.g., mixtral, llama3) if needed
-GROQ_MODEL_NAME = os.getenv("GROQ_MODEL_NAME", "deepseek-coder:6.7b")
+GROQ_MODEL_NAME = os.getenv("GROQ_MODEL_NAME", "llama3-8b-8192")
 
 llm_model = ChatGroq(
     groq_api_key=os.getenv("GROQ_API_KEY"),
